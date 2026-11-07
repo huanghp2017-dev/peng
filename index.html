@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>拇外翻手术策略助手</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%2238%20614%2080%2080%22%3E%3Crect%20x%3D%2238.00%22%20y%3D%22614.00%22%20width%3D%2280.00%22%20height%3D%2280.00%22%20rx%3D%225.60%22%20fill%3D%22%23B8322A%22/%3E%3Crect%20x%3D%2243.60%22%20y%3D%22619.60%22%20width%3D%2268.80%22%20height%3D%2268.80%22%20rx%3D%223.20%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-opacity%3D%22.55%22%20stroke-width%3D%222.00%22/%3E%3Cpath%20d%3D%22M100.08%20626.17%2090.14%20624.34C90.08%20626.41%2090.02%20629.31%2089.84%20631.32L82.97%20628.72V654.83C82.26%20655.3%2081.61%20655.95%2081.14%20656.48L87.65%20660.45L89.66%20657.14H97.83C97.71%20660.04%2097.6%20662.52%2097.42%20664.65C95.46%20662.88%2092.92%20660.87%2092.92%20660.87L90.02%20664.65H81.32L81.79%20666.31H96.65L97.3%20666.25C96.94%20669.69%2096.47%20671.76%2095.76%20672.41C95.35%20672.76%2094.87%20672.88%2093.92%20672.88C92.74%20672.88%2088.72%20672.65%2086.17%20672.47L86.11%20673.18C88.72%20673.71%2090.85%20674.6%2091.91%20675.67C92.92%20676.67%2093.16%20678.33%2093.16%20680.4C96.77%20680.4%2099.02%20679.75%20100.85%20678.33C103.69%20676.14%20104.58%20670.46%20105%20658.32C106.24%20658.14%20106.95%20657.79%20107.36%20657.25L100.97%20651.93L97.24%20655.48H89.19V636.42C90.08%20638.19%2090.61%20640.56%2090.37%20642.69C93.16%20645.3%2096.59%20643.64%2096.94%20641.09C96.83%20643.93%2096.65%20645.24%2096.23%20645.65C96%20645.95%2095.64%20646.07%2094.93%20646.07C94.1%20646.07%2092.33%20646.01%2091.26%20645.89V646.72C92.74%20647.13%2093.57%20647.66%2094.16%20648.49C94.81%20649.32%2094.93%20650.8%2094.93%20652.64C97.48%20652.64%2099.31%20652.04%20100.67%20650.92C102.86%20649.2%20103.22%20645.83%20103.28%20634.05C104.4%20633.87%20105.11%20633.52%20105.47%20633.04L99.67%20628.31L96.47%20631.44H93.21L97.71%20627.71C99.08%20627.65%2099.84%20627.18%20100.08%20626.17ZM89.19%20635.17V633.1H97.06L96.94%20640.2C96.71%20638.25%2094.58%20636.12%2089.19%20635.17ZM75.16%20655.54H72.97L73.03%20650.15V643.46H75.16ZM67.46%20627.95V650.15C67.46%20660.33%2067.82%20671.23%2064.86%20679.51L65.69%20679.99C71.43%20673.59%2072.67%20665.19%2072.97%20657.2H75.16V670.69C75.16%20671.4%2074.98%20671.7%2074.27%20671.7C73.56%20671.7%2070.78%20671.52%2070.78%20671.52V672.41C72.38%20672.76%2073.15%20673.42%2073.62%20674.54C74.09%20675.49%2074.33%20677.38%2074.39%20679.57C80.31%20678.98%2081.02%20676.26%2081.02%20671.58V630.91C81.97%20630.67%2082.62%20630.32%2082.91%20629.9L77.23%20625.52L74.63%20628.54H73.97L67.46%20626.06ZM75.16%20641.8H73.03V630.2H75.16ZM52.6%20627.95V647.13C52.6%20657.91%2052.84%20670.04%2049.58%20679.57L50.47%20680.05C55.74%20673.53%2057.4%20665.13%2057.87%20657.2H60.18V670.75C60.18%20671.4%2060%20671.76%2059.35%20671.76C58.7%20671.76%2056.21%20671.52%2056.21%20671.52V672.47C57.69%20672.82%2058.4%20673.42%2058.88%20674.48C59.29%20675.43%2059.47%20677.26%2059.53%20679.4C65.15%20678.8%2065.8%20676.14%2065.8%20671.64V630.67C66.63%20630.5%2067.17%20630.2%2067.46%20629.84L62.13%20625.76L59.71%20628.54H59.06L52.6%20626.12ZM60.18%20655.54H57.99C58.11%20652.58%2058.11%20649.74%2058.11%20647.13V643.46H60.18ZM60.18%20641.8H58.11V630.2H60.18Z%22%20fill%3D%22%23fff%22/%3E%3C/svg%3E">
+<!--
+  依据：《拇外翻手术怎么选.html》（projects/写作产出/综述问答/，2026-11-06）。
+  原始来源：Coughlin & Mann 第10版 第7章各术式Indications/Contraindications（printed p.185、190、195、199、204、208、220、225、229、230、247–248、252、259）与手术流程正文（p.192–193）；
+  OKU 13 第45章（printed p.590–591，Figure 4）；OKU Foot and Ankle 6 第13章 Table 2；Miller's Review of Orthopaedics 第9版 第6章（printed p.493–501）；
+  Master Techniques Foot and Ankle 第3版 第1、3、6、7、8章 Indications and Contraindications；德国S2e拇外翻指南第5.1版与Ettinger 2025 Figure 2；
+  Lam 2025、Kaufmann 2020、Faber 2013、Easley 1996、Barg 2018。
+  version: 2026-11-06 初版；同日微创拆为第三代MICA/PECA、微创Scarf、第四代三项；同日修正青少年9处，并对青少年过滤成人微创证据（成人来源不作青少年依据、OKU 13按IMA分度只在流程到达时用、新增内侧楔骨截骨等），第三代“适合”上限IMA 15°（用户定），Mitchell/Bosch加第二代提示
+-->
+<style>
+/* 视觉标识：黄鹏 · 关节外科（墨 #161616、朱 #C8372D、宣 #F3EFE6、石 #8A857C；朱色只用于标识与强调） */
+:root{
+  --bg:#F3EFE6; --card:#FFFDF8; --fg:#161616; --muted:#5E5950; --stone:#8A857C; --line:#DDD5C6;
+  --ink:#161616; --on-ink:#F3EFE6; --zhu:#C8372D; --tint:#ECE6DA;
+  --warn:#8A5A12; --warn-bg:#F6ECD8; --bad:#A8322A; --bad-bg:#F6E3DF;
+  --ok:#2F6B4F; --ok-bg:#E5EEE5; --mix:#5B4A86; --mix-bg:#ECE8F4;
+  --serif:"Noto Serif SC","Source Han Serif SC","Source Han Serif CN","Songti SC","STSong","SimSun",serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#161616; --card:#1F1D1A; --fg:#F3EFE6; --muted:#B3AC9F; --stone:#8A857C; --line:#36322C;
+    --ink:#F3EFE6; --on-ink:#161616; --zhu:#D9574C; --tint:#2A2723;
+    --warn:#E3B465; --warn-bg:#2E2618; --bad:#F08A7E; --bad-bg:#3A201C;
+    --ok:#86C9A2; --ok-bg:#18291F; --mix:#B8A8E6; --mix-bg:#26213A;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#161616; --card:#1F1D1A; --fg:#F3EFE6; --muted:#B3AC9F; --stone:#8A857C; --line:#36322C;
+  --ink:#F3EFE6; --on-ink:#161616; --zhu:#D9574C; --tint:#2A2723;
+  --warn:#E3B465; --warn-bg:#2E2618; --bad:#F08A7E; --bad-bg:#3A201C;
+  --ok:#86C9A2; --ok-bg:#18291F; --mix:#B8A8E6; --mix-bg:#26213A;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);
+  font:16px/1.65 -apple-system,"PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif}
+main{max-width:680px;margin:0 auto;padding:16px}
+.masthead{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:6px 0 14px;border-bottom:1px solid var(--line);margin-bottom:18px}
+.mark{height:34px;width:auto;color:var(--fg);display:block}
+.masthead .kicker{font-size:12px;color:var(--stone);letter-spacing:.12em;text-align:right}
+.title{display:flex;align-items:center;gap:12px;margin:0 0 16px}
+.title .seal{width:34px;height:34px;flex:0 0 auto}
+h1{font-family:var(--serif);font-size:24px;font-weight:700;letter-spacing:.04em;margin:0;line-height:1.3}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 16px;margin:0 0 14px}
+.card h2{font-family:var(--serif);font-size:17px;margin:0 0 10px;font-weight:700}
+form.card h2{padding-left:10px;border-left:3px solid var(--zhu)}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 12px}
+label.num{display:flex;flex-direction:column;font-size:14px;color:var(--muted)}
+label.num input{margin-top:4px;font-size:18px;padding:8px 10px;border:1px solid var(--line);border-radius:8px;
+  background:var(--bg);color:var(--fg);width:100%}
+label.num input:focus{outline:2px solid var(--ink);outline-offset:1px}
+.q{margin:12px 0 0}
+.q .t{font-size:14px;color:var(--muted);margin-bottom:6px}
+.seg{display:flex;gap:8px;flex-wrap:wrap}
+.seg label{flex:1 1 0;min-width:96px}
+.seg input,.chips input{position:absolute;opacity:0;pointer-events:none}
+.seg span,.chips span{display:block;text-align:center;padding:8px 6px;border:1px solid var(--line);border-radius:8px;font-size:14px;cursor:pointer;background:var(--card)}
+.seg input:checked+span,.chips input:checked+span{background:var(--ink);border-color:var(--ink);color:var(--on-ink);font-weight:600}
+.seg input:focus-visible+span,.chips input:focus-visible+span{outline:2px solid var(--zhu);outline-offset:1px}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chips span{text-align:left;padding:8px 10px}
+button{width:100%;margin-top:14px;padding:12px;font-size:17px;border:0;border-radius:10px;background:var(--ink);color:var(--on-ink);font-weight:600;cursor:pointer;letter-spacing:.08em}
+button.ghost{background:transparent;color:var(--fg);border:1px solid var(--line);margin-top:8px;font-weight:500}
+.step{border-left:3px solid var(--ink);padding:2px 0 2px 12px;margin:10px 0}
+.step h3{font-size:15px;margin:0 0 2px}
+.step p{margin:2px 0;font-size:14px}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+th{background:var(--tint);font-weight:600}
+.proc{border:1px solid var(--line);border-radius:10px;padding:10px 12px;margin:10px 0;background:var(--card)}
+.proc h3{font-size:15px;margin:0 0 6px;display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.proc ul{margin:4px 0;padding-left:20px;font-size:14px}
+.proc li{margin:2px 0}
+.badge{display:inline-block;padding:1px 10px;border-radius:999px;font-size:12px;font-weight:600}
+.s-ok{background:var(--ok-bg);color:var(--ok)} .s-rel{background:var(--warn-bg);color:var(--warn)}
+.s-mix{background:var(--mix-bg);color:var(--mix)} .s-none{background:var(--bg);color:var(--muted);border:1px solid var(--line)}
+.s-bad{background:var(--bad-bg);color:var(--bad)}
+.lab{font-size:12px;font-weight:600;margin-top:6px}
+.lab.p{color:var(--ok)} .lab.c{color:var(--bad)} .lab.r{color:var(--warn)} .lab.n{color:var(--muted)}
+details{margin:8px 0}
+summary{cursor:pointer;color:var(--fg);font-size:14px;text-decoration:underline;text-underline-offset:3px}
+.note{background:var(--warn-bg);border-radius:8px;padding:8px 12px;margin:8px 0;font-size:14px}
+.note b{color:var(--warn)}
+.src{color:var(--muted);font-size:12px}
+.err{color:var(--bad);font-size:14px;margin-top:8px}
+.about{margin-top:22px;font-size:13px;color:var(--muted);line-height:1.7}
+.about h2{color:var(--fg)}
+.about p{margin:6px 0}
+.about b{color:var(--fg);font-weight:600}
+.sign{display:flex;align-items:center;gap:10px;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.sign .seal{width:26px;height:26px;flex:0 0 auto}
+.sign .who{font-family:var(--serif);color:var(--fg);font-size:14px;letter-spacing:.06em}
+.sign .ver{margin-left:auto;font-size:12px;color:var(--stone)}
+@media (max-width:420px){.chips{grid-template-columns:1fr} .masthead .kicker{display:none} h1{font-size:22px}}
+</style>
+</head>
+<body>
+<main>
+<header class="masthead"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 341.7 100" class="mark" role="img" aria-label="黄鹏 · 关节外科"><path d="M56.06 62.77 55.92 63.3C61.97 65.31 65.62 68.34 67.54 70.54C73.25 75.39 84.67 63.25 56.06 62.77ZM46.56 61.33C43.54 64.64 37.15 69.01 31.2 71.46L31.34 71.98C38.69 71.17 46.18 69.15 50.78 66.8C52.46 67.18 53.47 66.94 53.95 66.42ZM63.84 46.16V51.58H57.36V46.16ZM57.12 26.24V32.29H50.59V28.26C51.94 28.06 52.27 27.58 52.37 26.91L43.78 26.24V32.29H34.22L34.61 33.63H43.78V39.34H31.49L31.87 40.69H50.54V44.82H45.07L37.73 42.03V63.49H38.74C41.62 63.49 44.69 62 44.69 61.33V60.27H63.84V62.38H65.04C67.34 62.38 70.85 61.23 70.9 60.9V47.26C71.9 47.07 72.48 46.64 72.82 46.26L66.43 41.41L63.36 44.82H57.36V40.69H75.65C76.37 40.69 76.94 40.45 77.09 39.92C74.5 37.81 70.32 34.74 70.32 34.74L66.62 39.34H64.08V33.63H73.73C74.4 33.63 74.98 33.39 75.12 32.86C72.72 30.85 68.78 27.97 68.78 27.97L65.28 32.29H64.08V28.26C65.42 28.06 65.71 27.58 65.81 26.91ZM44.69 58.93V52.93H50.54V58.93ZM44.69 51.58V46.16H50.54V51.58ZM63.84 58.93H57.36V52.93H63.84ZM50.54 39.34 50.59 33.63H57.12V39.34Z M123.74 27.78 115.68 26.29C115.63 27.97 115.58 30.32 115.44 31.95L109.87 29.84V51.01C109.3 51.39 108.77 51.92 108.38 52.35L113.66 55.57L115.3 52.88H121.92C121.82 55.23 121.73 57.25 121.58 58.98C120 57.54 117.94 55.9 117.94 55.9L115.58 58.98H108.53L108.91 60.32H120.96L121.49 60.27C121.2 63.06 120.82 64.74 120.24 65.26C119.9 65.55 119.52 65.65 118.75 65.65C117.79 65.65 114.53 65.46 112.46 65.31L112.42 65.89C114.53 66.32 116.26 67.04 117.12 67.9C117.94 68.72 118.13 70.06 118.13 71.74C121.06 71.74 122.88 71.22 124.37 70.06C126.67 68.29 127.39 63.68 127.73 53.84C128.74 53.7 129.31 53.41 129.65 52.98L124.46 48.66L121.44 51.54H114.91V36.08C115.63 37.52 116.06 39.44 115.87 41.17C118.13 43.28 120.91 41.94 121.2 39.87C121.1 42.18 120.96 43.23 120.62 43.57C120.43 43.81 120.14 43.9 119.57 43.9C118.9 43.9 117.46 43.86 116.59 43.76V44.43C117.79 44.77 118.46 45.2 118.94 45.87C119.47 46.54 119.57 47.74 119.57 49.23C121.63 49.23 123.12 48.75 124.22 47.84C126 46.45 126.29 43.71 126.34 34.16C127.25 34.02 127.82 33.73 128.11 33.34L123.41 29.5L120.82 32.05H118.18L121.82 29.02C122.93 28.98 123.55 28.59 123.74 27.78ZM114.91 35.07V33.39H121.3L121.2 39.15C121.01 37.57 119.28 35.84 114.91 35.07ZM103.54 51.58H101.76L101.81 47.22V41.79H103.54ZM97.3 29.22V47.22C97.3 55.47 97.58 64.3 95.18 71.02L95.86 71.41C100.51 66.22 101.52 59.41 101.76 52.93H103.54V63.87C103.54 64.45 103.39 64.69 102.82 64.69C102.24 64.69 99.98 64.54 99.98 64.54V65.26C101.28 65.55 101.9 66.08 102.29 66.99C102.67 67.76 102.86 69.3 102.91 71.07C107.71 70.59 108.29 68.38 108.29 64.59V31.62C109.06 31.42 109.58 31.14 109.82 30.8L105.22 27.25L103.1 29.7H102.58L97.3 27.68ZM103.54 40.45H101.81V31.04H103.54ZM85.25 29.22V44.77C85.25 53.5 85.44 63.34 82.8 71.07L83.52 71.46C87.79 66.18 89.14 59.36 89.52 52.93H91.39V63.92C91.39 64.45 91.25 64.74 90.72 64.74C90.19 64.74 88.18 64.54 88.18 64.54V65.31C89.38 65.6 89.95 66.08 90.34 66.94C90.67 67.71 90.82 69.2 90.86 70.93C95.42 70.45 95.95 68.29 95.95 64.64V31.42C96.62 31.28 97.06 31.04 97.3 30.75L92.98 27.44L91.01 29.7H90.48L85.25 27.73ZM91.39 51.58H89.62C89.71 49.18 89.71 46.88 89.71 44.77V41.79H91.39ZM91.39 40.45H89.71V31.04H91.39Z" fill="currentColor"/><rect x="146.8" y="28.0" width="2.0" height="44.0" fill="currentColor" opacity=".6"/><path d="M171.65 38.44C172.67 39.77 173.72 41.52 174.24 42.82H169.3V45.36H178.02V48.73L177.99 49.7H167.59V52.21H177.5C176.53 54.94 173.89 57.75 166.92 59.96C167.62 60.56 168.46 61.64 168.81 62.26C175.4 60.04 178.48 57.16 179.88 54.21C182.15 58.05 185.5 60.75 190.17 62.1C190.57 61.34 191.38 60.18 191.98 59.59C187.14 58.48 183.61 55.86 181.53 52.21H191.19V49.7H180.93L180.96 48.76V45.36H189.74V42.82H184.77C185.71 41.44 186.71 39.74 187.57 38.17L184.79 37.26C184.15 38.93 182.99 41.2 181.93 42.82H174.94L176.64 41.87C176.13 40.6 174.97 38.74 173.81 37.36Z M201.4 46.79V49.24H208.18V62.2H210.88V49.24H219.33V55.59C219.33 55.97 219.16 56.08 218.62 56.08C218.11 56.1 216.22 56.1 214.44 56.05C214.76 56.8 215.12 57.94 215.2 58.72C217.73 58.72 219.46 58.72 220.57 58.32C221.68 57.88 221.97 57.1 221.97 55.64V46.79ZM215.68 37.2V40.09H208.91V37.2H206.31V40.09H200.21V42.52H206.31V45.41H208.91V42.52H215.68V45.41H218.38V42.52H224.4V40.09H218.38V37.2Z M237.61 37.17C236.69 41.87 235.01 46.36 232.58 49.14C233.18 49.51 234.28 50.3 234.74 50.76C236.2 48.89 237.44 46.44 238.44 43.66H243.14C242.71 46.27 242.06 48.54 241.22 50.54C240.14 49.62 238.77 48.65 237.66 47.89L236.09 49.62C237.39 50.57 238.98 51.78 240.09 52.84C238.23 56.08 235.69 58.37 232.58 59.88C233.26 60.31 234.31 61.37 234.72 62.02C240.66 58.88 244.79 52.46 246.19 41.68L244.36 41.14L243.87 41.25H239.23C239.58 40.06 239.87 38.88 240.14 37.63ZM247.95 37.2V62.26H250.65V47.84C252.56 49.62 254.72 51.81 255.8 53.27L257.96 51.51C256.56 49.81 253.7 47.19 251.56 45.36L250.65 46.06V37.2Z M277.97 40.42C279.54 41.55 281.37 43.22 282.18 44.38L283.96 42.76C283.07 41.6 281.18 40.01 279.62 38.96ZM276.94 47.49C278.62 48.65 280.59 50.38 281.51 51.57L283.24 49.89C282.29 48.73 280.24 47.08 278.56 46ZM274.6 37.5C272.46 38.42 268.98 39.23 265.93 39.71C266.2 40.25 266.55 41.12 266.63 41.68C267.74 41.55 268.9 41.36 270.06 41.14V44.79H265.71V47.19H269.71C268.68 50.08 266.98 53.35 265.33 55.18C265.74 55.8 266.33 56.86 266.58 57.56C267.82 56.02 269.03 53.7 270.06 51.24V62.23H272.54V50.3C273.35 51.57 274.27 53.08 274.68 53.91L276.22 51.92C275.68 51.19 273.3 48.33 272.54 47.54V47.19H276.35V44.79H272.54V40.63C273.84 40.33 275.05 39.98 276.08 39.58ZM275.97 54.7 276.38 57.13 284.96 55.67V62.23H287.47V55.24L290.82 54.67L290.44 52.3L287.47 52.78V37.17H284.96V53.21Z" fill="var(--zhu)"/><rect x="321.7" width="20.0" height="100" fill="var(--zhu)"/></svg><div class="kicker">临床决策辅助</div></header>
+<div class="title"><svg xmlns="http://www.w3.org/2000/svg" viewBox="38 614 80 80" class="seal" role="img" aria-label="鹏"><rect x="38.00" y="614.00" width="80.00" height="80.00" rx="5.60" fill="#B8322A"/><rect x="43.60" y="619.60" width="68.80" height="68.80" rx="3.20" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.00"/><path d="M100.08 626.17 90.14 624.34C90.08 626.41 90.02 629.31 89.84 631.32L82.97 628.72V654.83C82.26 655.3 81.61 655.95 81.14 656.48L87.65 660.45L89.66 657.14H97.83C97.71 660.04 97.6 662.52 97.42 664.65C95.46 662.88 92.92 660.87 92.92 660.87L90.02 664.65H81.32L81.79 666.31H96.65L97.3 666.25C96.94 669.69 96.47 671.76 95.76 672.41C95.35 672.76 94.87 672.88 93.92 672.88C92.74 672.88 88.72 672.65 86.17 672.47L86.11 673.18C88.72 673.71 90.85 674.6 91.91 675.67C92.92 676.67 93.16 678.33 93.16 680.4C96.77 680.4 99.02 679.75 100.85 678.33C103.69 676.14 104.58 670.46 105 658.32C106.24 658.14 106.95 657.79 107.36 657.25L100.97 651.93L97.24 655.48H89.19V636.42C90.08 638.19 90.61 640.56 90.37 642.69C93.16 645.3 96.59 643.64 96.94 641.09C96.83 643.93 96.65 645.24 96.23 645.65C96 645.95 95.64 646.07 94.93 646.07C94.1 646.07 92.33 646.01 91.26 645.89V646.72C92.74 647.13 93.57 647.66 94.16 648.49C94.81 649.32 94.93 650.8 94.93 652.64C97.48 652.64 99.31 652.04 100.67 650.92C102.86 649.2 103.22 645.83 103.28 634.05C104.4 633.87 105.11 633.52 105.47 633.04L99.67 628.31L96.47 631.44H93.21L97.71 627.71C99.08 627.65 99.84 627.18 100.08 626.17ZM89.19 635.17V633.1H97.06L96.94 640.2C96.71 638.25 94.58 636.12 89.19 635.17ZM75.16 655.54H72.97L73.03 650.15V643.46H75.16ZM67.46 627.95V650.15C67.46 660.33 67.82 671.23 64.86 679.51L65.69 679.99C71.43 673.59 72.67 665.19 72.97 657.2H75.16V670.69C75.16 671.4 74.98 671.7 74.27 671.7C73.56 671.7 70.78 671.52 70.78 671.52V672.41C72.38 672.76 73.15 673.42 73.62 674.54C74.09 675.49 74.33 677.38 74.39 679.57C80.31 678.98 81.02 676.26 81.02 671.58V630.91C81.97 630.67 82.62 630.32 82.91 629.9L77.23 625.52L74.63 628.54H73.97L67.46 626.06ZM75.16 641.8H73.03V630.2H75.16ZM52.6 627.95V647.13C52.6 657.91 52.84 670.04 49.58 679.57L50.47 680.05C55.74 673.53 57.4 665.13 57.87 657.2H60.18V670.75C60.18 671.4 60 671.76 59.35 671.76C58.7 671.76 56.21 671.52 56.21 671.52V672.47C57.69 672.82 58.4 673.42 58.88 674.48C59.29 675.43 59.47 677.26 59.53 679.4C65.15 678.8 65.8 676.14 65.8 671.64V630.67C66.63 630.5 67.17 630.2 67.46 629.84L62.13 625.76L59.71 628.54H59.06L52.6 626.12ZM60.18 655.54H57.99C58.11 652.58 58.11 649.74 58.11 647.13V643.46H60.18ZM60.18 641.8H58.11V630.2H60.18Z" fill="#fff"/></svg><h1>拇外翻手术策略助手</h1></div>
+
+<form id="f" class="card" novalidate>
+  <h2>一、负重位X线</h2>
+  <div class="grid">
+    <label class="num">年龄（岁）<input id="age" type="number" inputmode="numeric" min="5" max="100" step="1" placeholder="如 55"></label>
+    <label class="num">HVA 拇外翻角（°）<input id="hva" type="number" inputmode="decimal" min="0" max="90" step="0.5" placeholder="如 32"></label>
+    <label class="num">IMA 第1–2跖骨间角（°）<input id="ima" type="number" inputmode="decimal" min="0" max="40" step="0.5" placeholder="如 14"></label>
+    <label class="num">DMAA 跖骨远端关节面角（°）<input id="dmaa" type="number" inputmode="decimal" min="0" max="50" step="0.5" placeholder="如 8"></label>
+  </div>
+
+  <h2 style="margin-top:16px">二、第一跖趾关节</h2>
+  <div class="q"><div class="t">关节炎，或僵硬、不能被动复位</div>
+    <div class="seg">
+      <label><input type="radio" name="oa" value="no" checked><span>无</span></label>
+      <label><input type="radio" name="oa" value="yes"><span>有</span></label>
+    </div></div>
+  <div class="q"><div class="t">跖趾关节是否匹配（关节面同心对合）</div>
+    <div class="seg">
+      <label><input type="radio" name="cong" value="no" checked><span>不匹配（半脱位）</span></label>
+      <label><input type="radio" name="cong" value="yes"><span>匹配</span></label>
+    </div></div>
+  <div class="q"><div class="t">外翻主要在趾骨（趾间外翻）</div>
+    <div class="seg">
+      <label><input type="radio" name="hvi" value="no" checked><span>否</span></label>
+      <label><input type="radio" name="hvi" value="yes"><span>是</span></label>
+    </div></div>
+
+  <h2 style="margin-top:16px">三、第一跖跗关节</h2>
+  <div class="q"><div class="t">稳定性</div>
+    <div class="seg">
+      <label><input type="radio" name="tmt" value="none" checked><span>未见异常</span></label>
+      <label><input type="radio" name="tmt" value="exam"><span>仅查体活动度大</span></label>
+      <label><input type="radio" name="tmt" value="xray"><span>影像学不稳</span></label>
+    </div>
+    <div class="src">影像学不稳：负重位正位片跖跗关节内侧半脱位，或侧位片背侧半脱位、跖侧张开（OKU 13 Figure 2）。</div></div>
+  <div class="q"><div class="t">第一跖跗关节炎</div>
+    <div class="seg">
+      <label><input type="radio" name="tmtoa" value="no" checked><span>无</span></label>
+      <label><input type="radio" name="tmtoa" value="yes"><span>有</span></label>
+    </div></div>
+
+  <h2 style="margin-top:16px">四、骨骺与病人情况（有就勾）</h2>
+  <div class="q"><div class="t">第一跖骨近端骨骺</div>
+    <div class="seg">
+      <label><input type="radio" name="physis" value="closed" checked><span>已闭合/成人</span></label>
+      <label><input type="radio" name="physis" value="open"><span>未闭合</span></label>
+    </div></div>
+  <div class="q chips">
+    <label><input type="checkbox" id="elderly"><span>高龄（由医生判断）</span></label>
+    <label><input type="checkbox" id="sedentary"><span>活动很少、居家</span></label>
+    <label><input type="checkbox" id="osteo"><span>骨质疏松</span></label>
+    <label><input type="checkbox" id="athlete"><span>运动员、舞者</span></label>
+    <label><input type="checkbox" id="laxity"><span>全身韧带松弛</span></label>
+    <label><input type="checkbox" id="spastic"><span>痉挛（脑瘫、卒中、颅脑损伤）</span></label>
+    <label><input type="checkbox" id="ra"><span>类风湿关节炎</span></label>
+    <label><input type="checkbox" id="pron"><span>明显旋前（跖骨头外侧变圆）</span></label>
+    <label><input type="checkbox" id="shortmt"><span>第一跖骨短或外侧跖痛</span></label>
+    <label><input type="checkbox" id="longmt"><span>第一跖骨长</span></label>
+    <label><input type="checkbox" id="ma"><span>严重跖骨内收</span></label>
+    <label><input type="checkbox" id="smoke"><span>吸烟</span></label>
+    <label><input type="checkbox" id="neuro"><span>周围神经病变</span></label>
+    <label><input type="checkbox" id="vasc"><span>血供差或活动性感染</span></label>
+    <label><input type="checkbox" id="revision"><span>复发、翻修</span></label>
+    <label><input type="checkbox" id="noncomp"><span>不能配合术后保护</span></label>
+  </div>
+
+  <div class="err" id="err" role="alert"></div>
+  <button type="submit">生成分析</button>
+  <button type="button" class="ghost" id="clearBtn">清空重填</button>
+</form>
+
+<section id="out" aria-live="polite"></section>
+
+<footer class="card about">
+  <h2>关于本工具</h2>
+  <p><b>用途：</b>按"六个问题"的顺序梳理病例，再把14种术式逐一对照各书的适应证与禁忌证，列出适合、可考虑、各书意见不一和不适合的理由。供医生参考，不替代临床判断；最终术式由主治医生结合查体、术中所见、患者需求和自身经验决定。</p>
+  <p><b>怎么读结果：</b>各书界值多为专家意见，彼此重叠甚至矛盾，工具把各书说法并列，不替你挑一套。工具不得不自行处理的地方（例如德国指南的斜杠按"任一超过即重度"、青少年"DMAA大"按&gt;15°计）会在结果里写明。未满18岁或骨骺未闭时，只采用明确涉及青少年的依据。</p>
+  <p><b>出处简称：</b>Coughlin＝Coughlin &amp; Mann's Surgery of the Foot and Ankle 第10版第7章（印刷页）；OKU 13＝Orthopaedic Knowledge Update 13 第45章；OKU6＝OKU Foot and Ankle 6 第13章；Miller＝Miller's Review of Orthopaedics 第9版第6章；MT1/3/6/7/8＝Master Techniques in Orthopaedic Surgery: The Foot and Ankle 第3版第1、3、6、7、8章（电子版无页码）；德国指南＝德国S2e拇外翻指南第5.1版（2024）与Ettinger 2025 Figure 2；Li 2024＝中国第三代微创拇外翻手术临床指南。其余随机试验、病例系列和综述以第一作者加年份标注（如Lee 2017、Torrent 2021、Lam 2025）。</p>
+  <div class="sign"><svg xmlns="http://www.w3.org/2000/svg" viewBox="38 614 80 80" class="seal" role="img" aria-label="鹏"><rect x="38.00" y="614.00" width="80.00" height="80.00" rx="5.60" fill="#B8322A"/><rect x="43.60" y="619.60" width="68.80" height="68.80" rx="3.20" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2.00"/><path d="M100.08 626.17 90.14 624.34C90.08 626.41 90.02 629.31 89.84 631.32L82.97 628.72V654.83C82.26 655.3 81.61 655.95 81.14 656.48L87.65 660.45L89.66 657.14H97.83C97.71 660.04 97.6 662.52 97.42 664.65C95.46 662.88 92.92 660.87 92.92 660.87L90.02 664.65H81.32L81.79 666.31H96.65L97.3 666.25C96.94 669.69 96.47 671.76 95.76 672.41C95.35 672.76 94.87 672.88 93.92 672.88C92.74 672.88 88.72 672.65 86.17 672.47L86.11 673.18C88.72 673.71 90.85 674.6 91.91 675.67C92.92 676.67 93.16 678.33 93.16 680.4C96.77 680.4 99.02 679.75 100.85 678.33C103.69 676.14 104.58 670.46 105 658.32C106.24 658.14 106.95 657.79 107.36 657.25L100.97 651.93L97.24 655.48H89.19V636.42C90.08 638.19 90.61 640.56 90.37 642.69C93.16 645.3 96.59 643.64 96.94 641.09C96.83 643.93 96.65 645.24 96.23 645.65C96 645.95 95.64 646.07 94.93 646.07C94.1 646.07 92.33 646.01 91.26 645.89V646.72C92.74 647.13 93.57 647.66 94.16 648.49C94.81 649.32 94.93 650.8 94.93 652.64C97.48 652.64 99.31 652.04 100.67 650.92C102.86 649.2 103.22 645.83 103.28 634.05C104.4 633.87 105.11 633.52 105.47 633.04L99.67 628.31L96.47 631.44H93.21L97.71 627.71C99.08 627.65 99.84 627.18 100.08 626.17ZM89.19 635.17V633.1H97.06L96.94 640.2C96.71 638.25 94.58 636.12 89.19 635.17ZM75.16 655.54H72.97L73.03 650.15V643.46H75.16ZM67.46 627.95V650.15C67.46 660.33 67.82 671.23 64.86 679.51L65.69 679.99C71.43 673.59 72.67 665.19 72.97 657.2H75.16V670.69C75.16 671.4 74.98 671.7 74.27 671.7C73.56 671.7 70.78 671.52 70.78 671.52V672.41C72.38 672.76 73.15 673.42 73.62 674.54C74.09 675.49 74.33 677.38 74.39 679.57C80.31 678.98 81.02 676.26 81.02 671.58V630.91C81.97 630.67 82.62 630.32 82.91 629.9L77.23 625.52L74.63 628.54H73.97L67.46 626.06ZM75.16 641.8H73.03V630.2H75.16ZM52.6 627.95V647.13C52.6 657.91 52.84 670.04 49.58 679.57L50.47 680.05C55.74 673.53 57.4 665.13 57.87 657.2H60.18V670.75C60.18 671.4 60 671.76 59.35 671.76C58.7 671.76 56.21 671.52 56.21 671.52V672.47C57.69 672.82 58.4 673.42 58.88 674.48C59.29 675.43 59.47 677.26 59.53 679.4C65.15 678.8 65.8 676.14 65.8 671.64V630.67C66.63 630.5 67.17 630.2 67.46 629.84L62.13 625.76L59.71 628.54H59.06L52.6 626.12ZM60.18 655.54H57.99C58.11 652.58 58.11 649.74 58.11 647.13V643.46H60.18ZM60.18 641.8H58.11V630.2H60.18Z" fill="#fff"/></svg><span class="who">黄鹏 · 关节外科</span><span class="ver">2026-11-07 版</span></div>
+</footer>
+</main>
+
+<script>
+"use strict";
+// ---------- 决策规则（纯函数，便于测试） ----------
+// 每个术式收集四类条目：pro 适应证（某本书支持），conA 角度上的禁忌（可能与别的书冲突），
+// conP 病人情况的禁忌，rel 相对禁忌/慎用，note 提示。状态由这几类条目推出（见 status()）。
+function proc(name){
+  const p = {name, pro:[], conA:[], conP:[], rel:[], note:[]};
+  p.P = (t,s)=>p.pro.push([t,s]); p.CA=(t,s)=>p.conA.push([t,s]); p.CP=(t,s)=>p.conP.push([t,s]);
+  p.R = (t,s)=>p.rel.push([t,s]); p.N=(t,s)=>p.note.push([t,s]);
+  return p;
+}
+function status(p){
+  if (p.conP.length) return {k:"bad", t:"不适合"};
+  if (p.conA.length && p.pro.length) return {k:"mix", t:"各书意见不一"};
+  if (p.conA.length) return {k:"bad", t:"不适合"};
+  if (p.pro.length && p.rel.length) return {k:"rel", t:"可考虑（有相对禁忌）"};
+  if (p.pro.length) return {k:"ok", t:"适合"};
+  return {k:"none", t:"不在各书适应证范围内"};
+}
+const ORDER = {ok:0, rel:1, mix:2, none:3, bad:4};
+
+function flags(x){
+  const mildC = x.hva < 20 && x.ima < 11;                 // Coughlin正文轻度
+  const severeG = x.ima > 18 || x.hva > 40;               // 德国：任一超过即重度（工具处理）
+  const highM = x.ima > 13 || x.hva > 40;                 // Miller高档
+  const juv = x.age < 18 || x.open;
+  const tmtAny = x.tmt !== "none" || x.tmtoa;
+  return {mildC, severeG, highM, juv, tmtAny};
+}
+
+function evaluate(x){
+  const f = flags(x), L = [];
+  // OKU 13 Figure 4 先问跖趾关节炎、第一跖跗关节、关节匹配，都“否”才按IMA分度
+  const o13 = !x.oa && x.tmt === "none" && !x.tmtoa && !x.cong;
+
+  // 1 远端软组织手术单做
+  let p = proc("远端软组织手术单做（改良McBride：外侧松解、内侧隆起切除、内侧关节囊紧缩）");
+  if (!x.cong && x.hva < 30 && x.ima < 11) p.P("不匹配、HVA<30°且IMA<11°", "Coughlin p.195");
+  if (o13 && x.ima <= 9) p.P("IMA约9°以下的轻度不需截骨（流程图写≤9°，正文写<9°）", "OKU 13 p.590");
+  if (x.cong && x.dmaa > 15) p.CP("匹配型且DMAA>15°：矫正不了，还会把匹配关节拉成不匹配", "Coughlin p.195");
+  else if (x.cong) p.CA("匹配型：不应改变关节的匹配关系，远端软组织重建会把匹配关节拉成不匹配；匹配型宜用远端截骨、Akin加内侧隆起切除、双重/三重截骨或Scarf", "Coughlin p.193");
+  if (x.oa) p.CP("跖趾关节严重退变", "Coughlin p.195");
+  if (x.spastic) p.CP("痉挛", "Coughlin p.195");
+  if (x.laxity) p.CP("全身韧带松弛", "Coughlin p.195");
+  if (x.hva > 30 && x.ima > 11) p.CA("HVA>30°且IMA>11°时通常不能持久矫正", "Coughlin p.195");
+  p.R("Miller第9版把远端软组织松解列为不能单独做的术式（复发率高）", "Miller p.497");
+  if (f.juv) p.R("青少年单纯McBride失败率43%–75%", "Coughlin p.185、202");
+  if (f.juv && x.dmaa > 15) p.CP("青少年DMAA大时关节内矫正（远端软组织手术）属禁忌（原文只说'大'，工具以>15°计）", "Coughlin p.185");
+  p.N("超出HVA<30°、IMA<11°时，第一跖跗关节须能让IMA复位；术中外侧松解后把跖骨头推向第二跖骨，弹回则加截骨。Coughlin第7章作者约95%的病例会加截骨", "Coughlin p.195、199，Fig. 7-95");
+  L.push(p);
+
+  // 2 Akin单做
+  p = proc("Akin单做（近节趾骨内侧闭合楔形截骨）");
+  if (x.hvi && x.cong) p.P("趾间外翻（跖趾关节匹配）", "MT3；Coughlin p.203");
+  if (x.revision) p.P("复发或残余拇外翻", "MT3");
+  if (!x.cong) p.CP("跖趾关节有半脱位时不能作为矫正拇外翻的主要术式", "Coughlin p.204");
+  if (x.oa) p.CP("伴外翻的跖趾关节炎（作为主要治疗）", "MT3");
+  if (x.vasc) p.CP("血供差或感染", "MT3");
+  if (x.neuro) p.R("神经病变（用于治疗或预防第二趾溃疡时除外）", "MT3");
+  if (f.juv && x.hvi) p.P("青少年单纯趾间外翻：Akin（单一截骨）", "Miller p.501");
+  if (x.open) p.R("近节趾骨骨骺未闭：MT3列为禁忌；Coughlin认为不是近节趾骨截骨的禁忌，须术中找准骨骺", "MT3；Coughlin p.185");
+  if (x.ima > 13) p.R("单做不能减小IMA，IMA增大时不够", "Coughlin p.204");
+  p.N("畸形有限（HVA≤25°、IMA≤13°）但拇趾顶到第二趾时也可单做", "MT3");
+  L.push(p);
+
+  // 3 远端Chevron（开放）
+  p = proc("远端Chevron截骨（开放）");
+  let combo = false;   // 青少年IMA>13°且DMAA增大时为双重截骨组合，单做Chevron的角度上限不套用
+  if (!f.juv) {
+    if (!x.cong && (x.hva < 30 || x.ima < 13)) p.P("不匹配，HVA<30°或IMA<13°", "Coughlin p.208");
+    if (x.cong && x.dmaa <= 15) p.P("匹配型DMAA≤15°也可用", "Coughlin p.208");
+    if (x.ima <= 16) p.P("IMA≤16°", "MT1");
+    if (x.ima <= 13 && x.hva <= 40) p.P("IMA≤13°且HVA≤40°：远端Chevron", "Miller Box 6.1");
+  } else {
+    // 青少年：只用针对青少年的依据（Miller青少年节说按成人原则；Coughlin p.212引Zimmer青少年数据）
+    if (x.ima <= 13 && x.hva <= 40) p.P("青少年按成人原则处理：IMA≤13°且HVA≤40°做远端Chevron", "Miller p.501、Box 6.1");
+    if (x.ima <= 13 && x.dmaa > 10) p.P("青少年DMAA增大、IMA≤13°：双平面远端Chevron同时矫正DMAA和IMA（单一截骨）", "Miller p.501");
+    p.R("青少年Chevron复发率20%（Zimmer）；单做Chevron可靠范围约HVA<30°、IMA<13°", "Coughlin p.212");
+    if (x.ima > 13 && x.dmaa > 10) {
+      combo = true;
+      // Miller p.501：IMA>13°且DMAA增大 → 双平面远端Chevron矫正DMAA＋近端矫正IMA（骨骺未闭为内侧楔骨开放楔形）
+      p.name = "双平面远端Chevron（矫正DMAA）＋近端矫正IMA（骨骺未闭时改在内侧楔骨）";
+      p.P("青少年IMA>13°且DMAA增大：双平面远端Chevron矫正DMAA，加近端矫正IMA（骨骺未闭时为内侧楔骨开放楔形截骨），即双重截骨", "Miller p.500–501");
+      p.N("组合中远端Chevron只负责关节面方向（DMAA），IMA由近端或楔骨截骨矫正；单做Chevron的HVA>35°及重度不做远端截骨的限制不直接套用（推断，书中未明文说明，也未给组合的HVA上限）", "Coughlin p.208、244–245；Miller p.501");
+    } else if (x.ima > 13) {
+      // DMAA不增大：Miller按成人原则只需近端矫正，不需远端Chevron；单做Chevron超出Coughlin的可靠范围
+      p.CA("青少年IMA>13°、DMAA不增大：单做Chevron超出可靠范围（约IMA<13°）", "Coughlin p.212");
+      p.CA("按成人原则IMA>13°做近端矫正（骨骺未闭时改在内侧楔骨），不需远端Chevron", "Miller p.497、500–501");
+      p.N("可选的是近端截骨（骨骺已闭合）或内侧楔骨开放楔形截骨（骨骺未闭），见下方对应条目", "Coughlin p.230、244；Miller p.500");
+    }
+    p.N("骨骺在第一跖骨近端基底，远端Chevron不经过骨骺", "Coughlin p.185");
+  }
+  if (o13 && x.ima > 9 && x.ima < 14.5) p.P("IMA约9°至14°：远端截骨", "OKU 13 p.590");
+  if (!f.severeG) p.P("轻中度一档，远端截骨为“应当”选项之一", "德国指南");
+  if (x.revision && !f.juv) p.P("偶可用于单纯拇囊切除等术式失败后", "MT1");
+  if (x.hva > 35 && !combo) p.CA("HVA>35°", "Coughlin p.208");
+  if (x.ima > 15 && !f.juv) p.CA("IMA>15°", "Coughlin p.208");
+  if (x.ima > 16 && !f.juv) p.CA("IMA>16°", "MT1");
+  if (x.hva > 40 && x.ima > 20 && !combo) p.CA("重度不推荐远端截骨", "Coughlin p.193");
+  if (f.severeG) p.CA("重度一档不含远端截骨", "德国指南");
+  if (x.cong && x.dmaa > 15) p.CA("匹配型DMAA>15°（传统Chevron）；可在截骨内侧去一小楔改变关节面方向", "Coughlin p.208");
+  if (x.oa) p.CP("明显跖趾关节炎（中重度退变术后多僵硬）", "MT1；Coughlin p.208");
+  if (x.vasc) p.CP("血供差或感染", "MT1");
+  if (x.noncomp) p.CP("不能配合术后制动和保护性负重", "MT1");
+  if (x.elderly) p.R("高龄只是相对禁忌；生理年龄比实际年龄重要", "Coughlin p.208；MT1");
+  if (x.pron) p.R("中重度旋前难以用Chevron矫正", "Coughlin p.208；Miller p.493");
+  if (x.neuro) p.R("神经病变为相对禁忌", "MT1");
+  p.N("随机试验：Torkki 2001（HVA≤35°、IMA≤15°）Chevron 1年优于矫形垫和观察等待；Deenik 2008中重度与Scarf矫正相同", "Torkki 2001；Deenik 2008");
+  L.push(p);
+
+  // 4a 第三代微创（MICA/PECA）
+  p = proc("第三代微创Chevron（MICA/PECA：跖骨颈关节囊外截骨，螺钉固定，常加经皮Akin）");
+  const mild3 = x.hva <= 40 && x.ima <= 15;          // 用户定：第三代"适合"上限IMA 15°
+  if (mild3) {
+    p.P("轻中度（HVA≤40°、IMA≤15°）：中国2024年指南的适应证", "Li 2024");
+    p.P("与开放Chevron、Scarf-Akin的随机试验结果相近，早期疼痛更轻", "Kaufmann 2020；Dragosloveanu 2022；Lee 2017");
+    p.P(f.severeG ? "重度一档为“可以”选项" : "轻中度一档，第三代微创为“应当”选项之一", "德国指南");
+  } else {
+    p.P("超出IMA 15°或HVA 40°：病例系列显示可行（重度系列HVA约41°矫正到12°）", "Nunes 2023；Lewis 2021");
+    p.R("超出中国指南的轻中度范围，重度只能逐例评估；比较研究未覆盖，术前HVA越大复发风险越高", "Li 2024；Lewis 2025");
+    if (x.ima > 20) p.N("提出者认为IMA>20°不一定是禁忌，关键是跖骨头外移100%能否填满第一、二跖骨头间隙（未经验证）", "Vernois 2016");
+  }
+  if (x.revision) {
+    if (!x.oa) p.P("复发且跖趾关节无明显退变者也可", "Li 2024");
+    p.R("既往手术后复发为相对禁忌", "Toepfer 2022");
+  }
+  if (x.oa) p.CP("严重跖趾关节炎或严重僵硬", "Li 2024；Toepfer 2022");
+  if (x.tmtoa) p.CP("需要融合的第一跖跗关节炎：改做Lapidus", "Toepfer 2022");
+  if (x.vasc) p.CP("血供差（严重周围血管病变）或急性感染", "Li 2024");
+  if (x.noncomp) p.CP("不能配合围术期要求", "Li 2024");
+  if (x.ra) p.R("严重类风湿为禁忌（是否严重由医生判断）", "Li 2024");
+  if (x.neuro) p.R("严重周围神经病变为禁忌", "Li 2024");
+  if (x.tmt !== "none") p.R("第一跖跗关节不稳：中国指南列为相对禁忌，严重不稳改做Lapidus", "Li 2024；Toepfer 2022；Miller p.499");
+  if (x.ma) p.R("伴严重跖骨内收为相对禁忌", "Li 2024");
+  if (x.elderly && x.osteo) p.R("高龄伴严重骨质疏松为相对禁忌；骨质软时撬动可致内侧壁骨折", "Li 2024；Vernois 2016");
+  else if (x.osteo) p.N("骨质差：Vernois认为不能6周足跟负重者MICA优于基底截骨，但要防撬动时内侧壁骨折", "Vernois 2016；Redfern 2015");
+  if (x.cong && x.dmaa > 15) p.R("严重病理性DMAA：Toepfer列为相对禁忌；Vernois认为DMAA异常时首选远端Chevron", "Toepfer 2022；Vernois 2016");
+  if (x.age < 18 || x.open) p.R("证据只来自成人和≥16岁者", "Toepfer 2022；Lewis 2021");
+  p.N("Miller第9版“可用于各种IMA和HVA”一句无参考文献，不作为适应证依据", "Miller p.499");
+  L.push(p);
+
+  // 4b 微创Scarf
+  p = proc("微创Scarf截骨（0.5 cm切口磨钻Z形截骨，经皮螺钉）");
+  if (x.ima <= 15 && x.hva <= 40) p.P("IMA≤15°、HVA≤40°：随机试验中与开放Scarf结果相近，手术更快、术后24小时疼痛更低", "Torrent 2021");
+  else if (x.ima <= 20) { p.P("IMA≤20°：在随机试验纳入范围内", "Torrent 2021"); p.R("超出第三代'适合'上限IMA 15°（本工具设定）", "Li 2024"); }
+  if (x.ima > 20) p.CA("IMA>20°：随机试验排除，无证据", "Torrent 2021");
+  if (x.oa) p.CP("跖趾关节活动受限或影像学关节炎（Coughlin-Shurnas≥2级）被排除", "Torrent 2021");
+  if (x.tmtoa) p.CP("同期需做第一跖跗关节手术者被排除", "Torrent 2021");
+  if (x.vasc) p.CP("血供差等神经血管缺陷或局部感染被排除", "Torrent 2021");
+  if (x.ra) p.R("炎性关节病被排除", "Torrent 2021");
+  if (x.open) p.CP("骨骺未闭（开放Scarf的禁忌）", "Coughlin p.225");
+  if (x.osteo) p.R("老年骨质疏松为Scarf的相对禁忌", "Coughlin p.225");
+  if (x.revision) p.R("既往足踝手术被排除，翻修无证据", "Torrent 2021");
+  p.N("单术者58例、随访约21个月；透视剂量约为开放的14倍", "Torrent 2021");
+  L.push(p);
+
+  // 4c 第四代
+  p = proc("第四代微创（META：关节外横行截骨，固定前不稳以三维复位含去旋前，两枚螺钉至少一枚双皮质）");
+  if (x.age >= 16) p.P("第四代系列不限畸形严重程度纳入（≥16岁）", "Lam 2025");
+  p.R("证据只有单术者病例系列，无与开放手术或第三代的比较", "Lam 2025；Lewis 2025");
+  if (x.hva > 40) p.R("术前HVA越大越易复发（复发组术前HVA 44.3°对28.8°）", "Lam 2025");
+  if (x.pron) p.N("可在复位时同时纠正第一跖骨旋前", "Lewis 2025；Nunes 2024");
+  if (x.oa) p.CP("有症状的严重第一跖列关节炎或不能矫正的僵硬外翻（Lam系列排除）", "Lam 2025");
+  if (x.vasc) p.CP("血供差或感染", "择期手术通则（MT1）");
+  if (x.laxity) p.R("Lam系列排除全身韧带松弛（Beighton>8）", "Lam 2025");
+  if (x.spastic) p.R("Lam系列排除神经肌肉病", "Lam 2025");
+  if (x.revision) p.R("Lam系列只纳入初次手术", "Lam 2025");
+  if (x.tmt !== "none" || x.tmtoa) p.R("第一跖跗关节不稳可能需要Lapidus", "Lewis 2025");
+  L.push(p);
+
+  // 5 Mitchell / Bosch
+  p = proc("Mitchell / Bosch远端截骨（短缩型；经皮做法即第二代微创）");
+  if (!f.juv && !x.cong && !f.mildC && x.hva <= 40 && x.ima <= 15) p.P("中度或中重度、关节半脱位，上限HVA 35°–40°、IMA 15°", "Coughlin p.220");
+  if (f.juv) p.R("知识库无青少年用Mitchell/Bosch的适应证；Coughlin举例一名重度匹配型青少年，Mitchell术后IMA、HVA、DMAA均未矫正（Fig. 7-141）", "Coughlin p.224");
+  if (x.hva > 40 || x.ima > 15) p.CA("超过上限（HVA 35°–40°、IMA 15°）", "Coughlin p.220");
+  if (f.mildC) p.CA("轻度不用", "Coughlin p.220");
+  if (x.dmaa > 20) p.CA("DMAA>20°", "Coughlin p.220");
+  if (x.shortmt) p.CP("第一跖骨短或外侧跖痛", "Coughlin p.220");
+  if (x.oa) p.CP("超过轻度的跖趾关节退变", "Coughlin p.220");
+  if (x.age > 60) p.R("60岁以上结果明显变差", "Coughlin p.220");
+  p.N("经皮做法即第二代微创（Bösch/SERI，克氏针固定）：Coughlin引Huang认为中重度复发不可接受；Trnka转述的系列跖骨头畸形愈合55.6%–61%", "Coughlin p.223；Trnka 2021");
+  L.push(p);
+
+  // 6 Scarf
+  p = proc("Scarf截骨（跖骨干Z形）");
+  if (x.ima >= 14 && x.ima <= 20) p.P("IMA 14°–20°的中重度，DMAA正常或轻度增大、骨量足够", "Coughlin p.225");
+  if (f.highM) p.P("IMA>13°或HVA>40°：近端截骨或Scarf", "Miller p.497");
+  if (!f.mildC && x.hva <= 40 && x.ima <= 16) p.P("中度：跖骨干截骨加远端软组织手术", "OKU6 ch13");
+  if (o13 && x.ima >= 14) p.P("IMA约14°以上：近端截骨之一", "OKU 13 p.590");
+  p.P(f.severeG ? "重度一档为“可以”选项" : "轻中度一档，骨干截骨为“应当”选项之一", "德国指南");
+  if (f.mildC) p.CA("轻度禁忌（有更简单的术式）", "Coughlin p.225");
+  if (x.oa) p.CP("关节退变或跖趾关节活动受限", "Coughlin p.225");
+  if (x.open) p.CP("骨骺未闭", "Coughlin p.225");
+  if (x.osteo) p.R("老年骨质疏松为相对禁忌，截骨稳定依赖骨密度", "Coughlin p.225");
+  if (x.dmaa > 10) p.R("Scarf只能处理约10°以内的DMAA", "Coughlin p.225");
+  if (x.ima > 20) p.R("超过Coughlin所写的IMA 14°–20°", "Coughlin p.225");
+  if (x.shortmt) p.N("第一跖骨短时，Scarf可同时延长", "Coughlin p.225");
+  p.N("技术要求高、学习曲线长；部分系列复发25%、拇内翻20%", "Coughlin p.227–228");
+  L.push(p);
+
+  // 7 近端截骨 + 远端软组织
+  p = proc("远端软组织手术＋近端截骨（新月形、近端Chevron、Ludloff、开放楔形）");
+  if (!x.cong && x.hva > 30 && x.ima > 13) p.P("中重度、不匹配，HVA>30°且IMA>13°", "Coughlin p.230");
+  if (!f.juv && !x.cong && x.ima >= 15) p.P("IMA≥15°、不匹配（Ludloff）", "MT7");
+  if (o13 && x.ima >= 14) p.P("IMA约14°以上：近端截骨", "OKU 13 p.590");
+  if (!x.cong && f.highM) p.P("IMA>13°或HVA>40°：近端截骨或Scarf", "Miller p.497");
+  if (!x.cong && x.hva > 40 && x.ima > 20) p.P("重度：远端软组织手术＋近端截骨", "Coughlin p.193");
+  if (!x.cong && !f.mildC && x.hva > 40 && x.ima > 16) p.P("重度：近端截骨或第一跖跗关节融合", "OKU6 ch13");
+  if (!x.cong && (x.ima > 13 || x.hva > 30)) p.P(f.severeG ? "重度一档为“可以”选项" : "轻中度一档，近端截骨为“应当”选项之一", "德国指南");
+  if (x.cong && !(x.dmaa > 15)) p.CA("匹配型：不应改变关节的匹配关系，远端软组织重建会把匹配关节拉成不匹配；匹配型宜用远端截骨、Akin加内侧隆起切除、双重/三重截骨或Scarf", "Coughlin p.193");
+  if (x.cong && x.ima > 13) p.N("匹配型需矫正IMA时，近端（或骨骺未闭时内侧楔骨）截骨不配关节内软组织复位，而与远端截骨合成双重截骨，见多重截骨", "Coughlin p.193、244–245");
+  if (x.oa) p.CP("明显跖趾关节退变", "Coughlin p.230");
+  if (x.ma) p.CP("严重跖骨内收", "Coughlin p.230；MT7");
+  if (x.spastic) p.CP("痉挛", "Coughlin p.230");
+  if (x.cong && x.dmaa > 15) p.CP("匹配型DMAA>15°（软组织复位会复发、退变或僵硬；须加远端改向截骨，见多重截骨）", "Coughlin p.230");
+  if (x.open) {
+    p.CA("骨骺未闭：Coughlin此处写近端截骨要求骨骺已闭合；Miller主张近端矫正改在内侧楔骨", "Coughlin p.230；Miller p.500");
+    p.N("Coughlin另一处认为骨骺未闭不是第一跖骨近端截骨的禁忌，关键是术中找准骨骺，伤及骨骺所致第一跖骨短缩很难挽救", "Coughlin p.185，Fig. 7-71");
+  }
+  if (f.juv && x.dmaa > 15) p.CP("青少年DMAA大时关节内矫正（远端软组织手术）属禁忌（工具以>15°计）", "Coughlin p.185");
+  if (x.vasc) p.CP("血供差或感染", "MT7");
+  if (x.neuro) p.CP("神经病变", "MT7");
+  if (x.tmt !== "none") p.R("Ludloff一章把跖楔关节活动度过大列为禁忌（Lapidus可能更合适）", "MT7");
+  if (x.smoke) p.R("吸烟为相对禁忌", "MT7");
+  if (x.osteo) p.R("严重骨质疏松时要重新考虑（固定可能失败）", "MT7");
+  if (x.longmt) p.R("第一跖骨长或跖趾关节僵硬时不用开放楔形截骨（会延长跖骨）", "Coughlin p.229");
+  if (x.hva > 55 || x.ima > 25) p.R("HVA>55°或IMA>25°时常不能完全矫正", "Coughlin p.230");
+  if (x.ima < 12) p.N("IMA<12°一般不需截骨；术中IMA复位有阻力或第一跖骨基底有外侧小关节面时要截骨", "Coughlin p.230");
+  if (x.pron) p.N("近端斜行截骨（Mau、Ludloff）不需去楔就较容易纠正旋转", "Coughlin p.229");
+  p.N("几种近端截骨只要矫正充分，没有哪种被证明更好；随机试验中近端Chevron愈合更快，新月形截骨处跖骨背伸更多", "OKU 13 p.591；Easley 1996");
+  L.push(p);
+
+  // 7b 内侧楔骨开放楔形截骨
+  p = proc("内侧楔骨开放楔形截骨（矫正IMA，避开第一跖骨近端骨骺）");
+  if (x.open && x.ima > 13) p.P("骨骺未闭、IMA>13°：近端矫正改在内侧楔骨做", "Miller p.500");
+  if (x.open && x.ima > 13) p.P("骨骺未闭的青少年拇外翻伴第一跖骨内翻：开放楔形楔骨截骨（Fig. 7-171）", "Coughlin p.244");
+  if (!x.open && x.cong && x.dmaa > 15 && x.ima > 13) p.P("匹配型需矫正IMA时，远端闭合楔形加楔骨截骨可作选择（技术较难）", "Coughlin p.245");
+  if (x.oa) p.CP("跖趾关节炎（指向融合）", "Coughlin p.252");
+  if (x.vasc) p.CP("血供差或感染", "择期手术通则（MT1）");
+  if (x.laxity || x.tmt !== "none" || x.tmtoa) p.R("韧带松弛或第一跖跗关节不稳：Miller主张以跖跗关节融合代替近端截骨，须等骨骺闭合", "Miller p.501");
+  if (x.open && x.ima > 13) {
+    p.N(x.cong ? "关节匹配：同时做第一跖骨远端闭合楔形截骨" : "关节不匹配：同时做远端软组织重建", "Coughlin p.244");
+    if (x.dmaa > 10) p.N("DMAA增大：合用双平面远端Chevron（双重截骨），有趾间外翻再加Akin（三重截骨）", "Miller p.501");
+    p.N("Coughlin描述的做法是楔骨开放楔形截骨后植入三角形髂骨块、2枚克氏针固定", "Coughlin p.244");
+  }
+  L.push(p);
+
+  // 8 Lapidus
+  p = proc("Lapidus（第一跖跗关节融合＋远端软组织手术）");
+  if (x.hva >= 30 && x.ima >= 16) p.P("中重度：HVA≥30°且IMA≥16°", "Coughlin p.247");
+  if (x.tmtoa) p.P("第一跖跗关节炎", "Coughlin p.247；OKU 13 p.590；Miller p.497；MT8");
+  if (x.tmt === "xray") p.P("第一跖跗关节不稳（影像学）", "OKU 13 p.590；Miller Box 6.1；OKU6 ch13");
+  if (x.tmt === "exam") p.P("活动度过大（仅查体）：OKU 13、OKU6列为指征", "OKU 13 p.590；OKU6 ch13");
+  if (x.tmt !== "none" && x.hva > 30 && x.ima >= 14) p.P("HVA>30°、IMA≥14°且跖楔关节活动度过大", "MT8");
+  if (x.laxity) p.P("全身韧带松弛", "Coughlin p.247；MT8；Miller p.497");
+  if (x.revision) p.P("复发、翻修", "Coughlin p.247；MT8");
+  if (f.severeG) p.P("重度一档的首选（“应当”）", "德国指南");
+  if (x.osteo && (x.hva > 40 || x.ima > 18)) p.P("骨质疏松足的重度畸形，跖楔关节固定可能比第一跖骨近端更好", "MT8");
+  if (x.age < 18 && !x.open) p.P("青少年拇外翻（骨骺已闭合）", "Coughlin p.247；MT8");
+  if (f.mildC && !f.tmtAny && !x.laxity) p.CA("轻度且无明显活动度过大（有更小的术式）", "Coughlin p.248");
+  if (x.shortmt) p.CP("第一跖骨短（必须做时要同时延长或下移第一跖骨）", "Coughlin p.248；MT8");
+  if (x.open) p.CP("骨骺未闭（要等骨骺闭合）", "Coughlin p.248；MT8；Miller p.500");
+  if (x.oa) p.CP("跖趾关节退变", "Coughlin p.248；MT8");
+  if (x.athlete) p.CP("舞者、运动员（MT8列为禁忌；Coughlin列为爱运动年轻人的相对禁忌）", "MT8；Coughlin p.248");
+  if (x.noncomp) p.CP("不能配合", "MT8");
+  if (x.neuro) p.R("Charcot关节病禁忌", "MT8");
+  if (x.elderly) p.R("多用于较年轻者，老人常适合恢复更快、并发症较少的术式", "MT8");
+  if (!f.tmtAny && !x.laxity) p.R("MT8作者认为只应在跖楔关节活动度过大或有关节炎时使用；Coughlin作者认为只适用于约5%–10%的重度病例", "MT8；Coughlin p.248");
+  if (x.tmt === "exam") p.R("仅查体判定活动度过大：Faber 2013随机试验中Lapidus约10年不优于Hohmann远端截骨（活动度过大亚组也一样）；Coughlin作者认为多为畸形的结果；查体重复性差", "Faber 2013；Coughlin p.247–248；OKU 13 p.590");
+  p.N("Barg 2018汇总中第一跖跗关节融合的感染率（11.4%）和不愈合率最高（来自少数研究）", "Barg 2018");
+  L.push(p);
+
+  // 9 第一跖趾关节融合
+  p = proc("第一跖趾关节融合");
+  if (x.oa) p.P("跖趾关节炎，或僵硬、不能被动复位", "OKU 13 p.590；Miller Box 6.1；Coughlin p.252");
+  if (x.ra) p.P("类风湿", "Coughlin p.252");
+  if (x.spastic) p.P("痉挛（卒中、颅脑损伤、脑瘫）", "Coughlin p.252；Miller Box 6.1");
+  if (x.hva > 50) p.P("严重拇外翻（HVA通常>50°）", "Coughlin p.252");
+  if (x.elderly && !(x.hva < 20 && x.ima < 11)) p.P("中重度的老年患者", "Coughlin p.252");
+  if (x.revision) p.P("复发、翻修的补救", "Coughlin p.252；MT6");
+  if (f.severeG) p.P("重度一档为“可以”选项", "德国指南");
+  if (x.vasc) p.CP("血供差或活动性感染", "MT6");
+  if (x.smoke) p.R("吸烟（MT6列在禁忌中）", "MT6");
+  if (x.neuro) p.R("感觉缺失的足为相对禁忌", "Coughlin p.252");
+  if (x.athlete) p.R("患者在意跖趾关节活动丧失时为相对禁忌，术前要讲清楚", "Coughlin p.252");
+  p.N("跖趾关节对线恢复后IMA会随之减小，一般不需加跖骨截骨；趾间关节炎为相对禁忌", "Miller p.496；MT6；Coughlin p.252");
+  L.push(p);
+
+  if (f.juv) { const q = L[L.length - 1]; q.R("知识库没有青少年第一跖趾关节融合的资料，各适应证均来自成人", "Coughlin p.252；MT6"); }
+
+  // 10 Keller
+  p = proc("Keller切除成形");
+  if (x.elderly && x.sedentary) p.P("活动很少、居家的老人", "Coughlin p.259");
+  if (x.oa && x.hva < 30) p.P("HVA<30°伴跖趾关节退变", "Coughlin p.259");
+  if (x.revision) p.P("翻修补救", "Coughlin p.259");
+  if (!x.elderly && !x.sedentary) p.CP("年轻、活跃者（跖趾关节稳定性受损）", "Coughlin p.259");
+  if (x.shortmt) p.CP("外侧跖痛明显", "Coughlin p.259");
+  if (x.hva > 40 && !x.sedentary) p.R("严重畸形而不接受矫正不全者禁忌", "Coughlin p.259");
+  p.N("HVA通常只减少约一半，IMA几乎不变；拇趾负重功能丢失，跖痛、翘趾常见", "Coughlin p.260–262");
+  L.push(p);
+
+  // 11 多重第一跖列截骨
+  p = proc("多重第一跖列截骨（远端改向截骨＋矫正IMA，必要时加Akin）");
+  if (x.cong && x.dmaa > 15) p.P("匹配型且DMAA>15°：关节外矫形", "Coughlin p.208、230");
+  if (x.cong && x.ima > 13) p.P("匹配型、IMA增大：双重/三重第一跖列截骨（近端或楔骨截骨矫正IMA，远端截骨保持关节面方向）", "Coughlin p.193、244–245");
+  if (x.dmaa > 15) p.P("DMAA异常增高（通常>15°）：双重截骨", "OKU 13 p.590");
+  if (x.dmaa > 10) p.P("DMAA>10°：在角度所需术式之外加远端内侧闭合楔形或远端双平面截骨", "Miller p.498");
+  if (x.oa) p.CP("跖趾关节炎（指向融合）", "OKU 13 p.590");
+  if (p.pro.length) {
+    p.N("分工：远端截骨的标准做法是第一跖骨远端内侧闭合楔形截骨，只矫正DMAA（每切1 mm约矫正5°），做完拇趾会略呈内翻，所以必须再做近端或楔骨截骨减小IMA；需要时加Akin成三重截骨", "Coughlin p.244–245，Fig. 7-173");
+    p.N("远端改用Chevron时（Coughlin引Mitchell与Baxter的Chevron加趾骨截骨，适用于匹配型DMAA<20°；Miller用双平面Chevron），它只负责关节面方向，单做Chevron的HVA>35°、IMA>15°上限不直接套用——这是按分工推断，书中未明文说明", "Coughlin p.208、242、246；Miller p.501");
+    p.N("书中未给多重截骨的HVA上限。已报道的矫正量：Coughlin青少年匹配型双/三重截骨HVA平均矫正23°、IMA 8.3°（平均DMAA 19°）；Coughlin与Carlson 21足HVA 23°、IMA 9°、DMAA 14°", "Coughlin p.247");
+  }
+  if (x.dmaa > 10 && x.hvi) p.N("同时有趾间外翻，再加Akin（三重截骨）", "Miller p.500；Coughlin");
+  if ((x.dmaa > 10 || (x.cong && x.ima > 13)) && x.open) p.N("骨骺未闭：近端矫正改在内侧楔骨做开放楔形截骨", "Miller p.500；Coughlin p.244");
+  if (x.dmaa > 10) p.N("DMAA测量准确性报道不一，第一跖列旋转和倾斜会改变测值；各书正常值不同（Coughlin ≤6°、OKU6 <10°、OKU 13 ≤15°）", "Coughlin p.173、178–180；OKU6；OKU 13");
+  L.push(p);
+
+  // 择期手术通则：血供差或活动性感染对所有术式都是禁忌（MT1：全身或局部情况不允许手术者不做）
+  if (x.vasc) L.forEach(q => { if (!q.conP.some(([t]) => t.indexOf("血供") >= 0)) q.CP("血供差或活动性感染：先处理，不宜择期手术", "MT1"); });
+  // 未满18岁或骨骺未闭：德国指南（只纳入成人）、OKU 13（成人章节）、OKU6 ch13（未讨论青少年）不作支持或角度禁忌依据
+  if (f.juv) {
+    const adult = (s) => /^(德国指南|OKU 13 p\.590|OKU6 ch13)$/.test(s);
+    L.forEach(q => { q.pro = q.pro.filter(([, s]) => !adult(s)); q.conA = q.conA.filter(([, s]) => !adult(s)); });
+    // 成人随机试验/系统评价的提示对青少年不显示（用户定）
+    const adultStudy = /Torkki|Deenik|Easley|Faber|Barg/;
+    L.forEach(q => { q.note = q.note.filter(([, s]) => !adultStudy.test(s)); q.rel = q.rel.filter(([, s]) => !adultStudy.test(s)); });
+    // 微创的证据（中国2024年指南及其依据的随机试验与病例系列）全部来自成人，青少年不作支持依据
+    const adultMIS = /Li 2024|Kaufmann 2020|Dragosloveanu 2022|Lee 2017|Torrent 2021|Nunes 2023|Lewis 2021|Lam 2025/;
+    L.forEach(q => {
+      if (!/微创/.test(q.name)) return;
+      q.pro = q.pro.filter(([, s]) => !adultMIS.test(s));
+      q.N("知识库中没有青少年微创手术的证据：中国2024年指南未涉及青少年，其依据的随机试验与病例系列只纳入16或18岁以上；Coughlin与Miller讨论青少年时都未提微创", "Li 2024；Kaufmann 2020；Lewis 2021；Lam 2025；Coughlin p.184–186；Miller p.500–501");
+    });
+  }
+  L.forEach(q => q.st = status(q));
+  return L;
+}
+
+function grades(x){
+  const g = [];
+  const o13 = x.ima <= 9 ? "轻度（IMA约9°以下）" : (x.ima < 14 ? "中度（IMA约9°–14°）" : "重度（IMA约14°以上）");
+  const edge = (x.ima === 9 || x.ima === 14) ? "；正好在界值上，流程图与正文写法不同" : "";
+  g.push(["OKU 13（只看IMA）", o13 + edge]);
+  let c;
+  if (x.hva < 20 && x.ima < 11) c = "轻度";
+  else if (x.hva > 40 && x.ima > 20) c = "重度";
+  else if (x.hva < 40 && x.ima > 13) c = "中度";
+  else c = "落在正文分档的空档（原书说各组会有重叠）";
+  g.push(["Coughlin第10版手术流程正文", c]);
+  const h = x.hva < 20 ? "轻" : (x.hva <= 40 ? "中" : "重");
+  const i = x.ima < 11 ? "轻" : (x.ima <= 16 ? "中" : "重");
+  g.push(["OKU6 Table 2", h === i ? h + "度" : "HVA属" + h + "度、IMA属" + i + "度"]);
+  g.push(["Miller Box 6.1", (x.ima <= 13 && x.hva <= 40) ? "低档（IMA≤13°且HVA≤40°）" : "高档（IMA>13°或HVA>40°）"]);
+  g.push(["德国指南", (x.ima > 18 || x.hva > 40) ? "重度（IMA>18°/HVA>40°；工具按任一超过即重度）" : "轻中度（IMA≤18°/HVA≤40°）"]);
+  if (x.age < 18 || x.open) g.push(["注意", "以上均为成人分档；德国指南、OKU 13、OKU6未讨论青少年，本工具不把它们当作青少年的依据"]);
+  return g;
+}
+
+function steps(x){
+  const s = [];
+  s.push(["问题一：第一跖趾关节炎或僵硬", x.oa
+    ? "有 → 各书都指向第一跖趾关节融合（OKU 13、Miller、OKU6、Coughlin）；关节保留术式多为禁忌。活动很少的老人可考虑Keller。"
+    : "无 → 可以考虑保留关节的术式。"]);
+  let t;
+  if (x.tmtoa) t = "有跖跗关节炎 → Lapidus理由充分（Coughlin、OKU 13、Miller、MT8）。";
+  else if (x.tmt === "xray") t = "影像学不稳 → OKU 13、OKU6、Miller、MT8指向Lapidus；德国指南列为“可以”。";
+  else if (x.tmt === "exam") t = "仅查体活动度大 → 意见分歧：OKU 13、OKU6指向Lapidus；Coughlin作者认为多为继发，Faber 2013随机试验Lapidus不优于远端截骨；查体重复性差。按角度选截骨也说得通。";
+  else t = "未见异常 → 不需为此融合跖跗关节。";
+  if (x.laxity && !x.tmtoa) t += "全身韧带松弛也是Lapidus的指征之一。";
+  if (x.open && (x.laxity || x.tmtoa || x.tmt !== "none")) t += "骨骺未闭：跖跗关节融合要等第一跖骨骨骺闭合，现阶段近端矫正改在内侧楔骨（Miller p.500–501）。";
+  s.push(["问题二：第一跖跗关节", t]);
+  if (x.cong) s.push(["问题三：匹配度与DMAA", x.dmaa > 15
+    ? "匹配、DMAA " + x.dmaa + "°（>15°）→ 只做关节外矫形：双重/多重截骨或Chevron内侧去楔；禁单做软组织手术或软组织加近端截骨（Coughlin、OKU 13）。"
+    : (x.dmaa > 10 ? "匹配、DMAA " + x.dmaa + "°（>10°，≤15°）→ Miller主张加远端改向截骨；Coughlin认为DMAA≤15°的匹配型可用Chevron。"
+                   : "匹配、DMAA " + x.dmaa + "° → 做关节外矫形，避免把匹配关节拉成不匹配。")]);
+  else s.push(["问题三：匹配度与DMAA", "不匹配（半脱位）→ 复位关节、矫正IMA。" + (x.dmaa > 10 ? "DMAA " + x.dmaa + "°偏大：Miller主张DMAA>10°加远端内侧闭合楔形截骨。" : "")]);
+  s.push(["问题四：趾间外翻", x.hvi ? "有 → 加做Akin（各书一致）；跖趾关节有半脱位时Akin不能单独做。" : "无。"]);
+  s.push(["问题五：IMA和HVA", "HVA " + x.hva + "°、IMA " + x.ima + "°。各书分档见下表；界值多为专家意见，查体和术中所见更能决定术式（Miller p.496）。"]);
+  const pf = [];
+  const names = {elderly:"高龄", sedentary:"活动很少", osteo:"骨质疏松", athlete:"运动员/舞者", laxity:"全身韧带松弛", spastic:"痉挛", ra:"类风湿",
+    pron:"明显旋前", shortmt:"第一跖骨短或外侧跖痛", longmt:"第一跖骨长", ma:"严重跖骨内收", smoke:"吸烟", neuro:"神经病变", vasc:"血供差或感染", revision:"复发/翻修", noncomp:"不能配合"};
+  Object.keys(names).forEach(k => { if (x[k]) pf.push(names[k]); });
+  if (x.age < 18 || x.open) pf.push(x.open ? "骨骺未闭" : "未满18岁");
+  s.push(["问题六：病人情况", pf.length ? pf.join("、") + " → 已计入下方各术式的禁忌与相对禁忌。" : "未勾选特殊情况。"]);
+  return s;
+}
+
+function juvenileNote(x){
+  if (!(x.age < 18 || x.open)) return "";
+  const g10 = (x.age <= 10) ? "本例≤10岁，截骨前要估计术后足部和第一跖骨还会长多少（Coughlin p.186）。" : "";
+  return "<b>青少年：</b>德国指南流程依据的系统评价只纳入成人，OKU 13与OKU6也未讨论青少年，均不作为青少年的依据；矫正常需截骨（Coughlin p.186）。" + g10 + "女孩足部生长约14岁完成（12岁时剩不到1 cm），男孩约16岁（12岁时还有近3 cm，约一半在第一跖骨近端骨骺）（Coughlin p.185）。DMAA大时关节内矫正（远端软组织手术）属禁忌，单纯McBride失败率高（Coughlin p.185、202）。Coughlin认为骨骺未闭不是手术或截骨的禁忌，关键是术中避开骨骺（p.185）；Miller：骨骺未闭时近端矫正改在内侧楔骨，跖跗关节融合要等骨骺闭合，复发是最常见并发症（p.500–501）。外侧骨骺阻滞不推荐（Coughlin p.185）。";
+}
+
+function analyze(x){ return {steps:steps(x), grades:grades(x), procs:evaluate(x), juv:juvenileNote(x)}; }
+
+// ---------- 页面 ----------
+const $ = (id) => (typeof document !== "undefined" ? document.getElementById(id) : null);
+const radio = (n) => document.querySelector('input[name="' + n + '"]:checked').value;
+function read(){
+  const n = (id) => { const v = $(id).value.trim(); return v === "" ? NaN : Number(v); };
+  const c = (id) => $(id).checked;
+  return {age:n("age"), hva:n("hva"), ima:n("ima"), dmaa:n("dmaa"),
+    oa:radio("oa")==="yes", cong:radio("cong")==="yes", hvi:radio("hvi")==="yes",
+    tmt:radio("tmt"), tmtoa:radio("tmtoa")==="yes", open:radio("physis")==="open",
+    elderly:c("elderly"), sedentary:c("sedentary"), osteo:c("osteo"), athlete:c("athlete"), laxity:c("laxity"),
+    spastic:c("spastic"), ra:c("ra"), pron:c("pron"), shortmt:c("shortmt"), longmt:c("longmt"), ma:c("ma"),
+    smoke:c("smoke"), neuro:c("neuro"), vasc:c("vasc"), revision:c("revision"), noncomp:c("noncomp")};
+}
+function check(x){
+  const miss = [];
+  if (!(x.age>=5 && x.age<=100)) miss.push("年龄");
+  if (!(x.hva>=0 && x.hva<=90)) miss.push("HVA");
+  if (!(x.ima>=0 && x.ima<=40)) miss.push("IMA");
+  if (!(x.dmaa>=0 && x.dmaa<=50)) miss.push("DMAA");
+  return miss.length ? "请填写或核对：" + miss.join("、") : "";
+}
+const li = (a) => a.map(([t,s]) => "<li>" + t + ' <span class="src">（' + s + "）</span></li>").join("");
+function procHTML(p){
+  let h = '<div class="proc"><h3><span class="badge s-' + p.st.k + '">' + p.st.t + "</span>" + p.name + "</h3>";
+  if (p.pro.length) h += '<div class="lab p">支持的说法</div><ul>' + li(p.pro) + "</ul>";
+  if (p.conP.length || p.conA.length) h += '<div class="lab c">禁忌／不适合</div><ul>' + li(p.conP.concat(p.conA)) + "</ul>";
+  if (p.rel.length) h += '<div class="lab r">相对禁忌／慎用</div><ul>' + li(p.rel) + "</ul>";
+  if (p.note.length) h += '<div class="lab n">提示</div><ul>' + li(p.note) + "</ul>";
+  return h + "</div>";
+}
+function render(x, r){
+  let h = '<div class="card"><h2>按顺序问六个问题</h2>';
+  r.steps.forEach(([a,b]) => h += '<div class="step"><h3>' + a + "</h3><p>" + b + "</p></div>");
+  if (r.juv) h += '<div class="note">' + r.juv + "</div>";
+  h += '<h2 style="margin-top:14px">在各书分档中的位置</h2><table><tr><th>来源</th><th>本例</th></tr>';
+  r.grades.forEach(([a,b]) => h += "<tr><td>" + a + "</td><td>" + b + "</td></tr>");
+  h += '</table><p class="src">同一个IMA在不同书里可分到不同档（Spindler 2024：IMA 14°可被分为轻、中或重度）。</p></div>';
+
+  const sorted = r.procs.slice().sort((a,b) => ORDER[a.st.k] - ORDER[b.st.k]);
+  const top = sorted.filter(p => p.st.k !== "bad" && p.st.k !== "none");
+  const rest = sorted.filter(p => p.st.k === "bad" || p.st.k === "none");
+  h += '<div class="card"><h2>各术式对照（' + top.length + ' 种可考虑）</h2>';
+  h += '<p class="src">绿＝至少一本书支持且无禁忌；黄＝有相对禁忌；紫＝有的书支持、有的书在角度上不支持；灰＝不在各书适应证范围；红＝有禁忌。</p>';
+  top.forEach(p => h += procHTML(p));
+  if (rest.length) h += "<details><summary>展开不适合或不在范围内的 " + rest.length + " 种</summary>" + rest.map(procHTML).join("") + "</details>";
+  h += "</div>";
+
+  h += '<div class="card"><h2>不管选哪种都要做到</h2><ul>'
+    + "<li>籽骨复位：籽骨没回到第一跖骨头下方是失败和复发的最大预测因素 <span class=\"src\">（OKU 13 p.591）</span></li>"
+    + (x.cong
+        ? "<li>关节匹配：不做关节内软组织复位（远端软组织松解会把匹配关节拉成不匹配），只做关节外矫形 <span class=\"src\">（Coughlin p.193）</span></li>"
+        : "<li>关节不匹配（半脱位）：截骨和Lapidus都同时做远端软组织松解（跖趾关节融合除外），保留腓侧籽骨 <span class=\"src\">（Miller p.497）</span></li>")
+    + "<li>IMA矫正到位；复发与IMA矫正不足、单做软组织重建、单做内侧隆起切除、籽骨仍半脱位有关 <span class=\"src\">（Miller p.500）</span></li>"
+    + "<li>避免矫枉过正：切除腓侧籽骨、内侧隆起切除过多、外侧松解过度、IMA过度矫正与拇内翻有关 <span class=\"src\">（Miller p.500）</span></li>"
+    + "<li>术前讲清楚：术后约1/3仍不能穿想穿的鞋；吸烟延迟截骨愈合 <span class=\"src\">（Coughlin p.190–191）</span></li>"
+    + "</ul></div>";
+  h += '<div class="card"><h2>选微创要知道的</h2><ul>'
+    + "<li>微创要分代看：第二代（克氏针）畸形愈合多；第三代（螺钉）与开放手术的随机试验只覆盖IMA约20°以内；第四代只有病例系列 <span class=\"src\">（Trnka 2021；Lewis 2025）</span></li>"
+    + "<li>学习曲线约20–40例；透视明显多于开放 <span class=\"src\">（Ramelli 2024；Torrent 2021）</span></li>"
+    + "<li>微创总并发症约16.6%，开放7%–8%，差别主要是螺钉突出需取钉 <span class=\"src\">（Lewis 2025）</span></li>"
+    + "<li>英国NICE 2024：效果与开放相当、无重大安全顾虑，但应只由受过专门训练者实施并登记 <span class=\"src\">（Lewis 2025转述）</span></li>"
+    + "<li>MICA、PECA等缩写各家做法不一（单螺钉或双螺钉、Chevron或横行），看文献要看具体技术 <span class=\"src\">（Torrent 2021；Lewis 2025）</span></li>"
+    + "</ul></div>";
+  $("out").innerHTML = h;
+  $("out").scrollIntoView({behavior:"smooth", block:"start"});
+}
+if (typeof document !== "undefined" && $("f")){
+  $("f").addEventListener("submit", (e) => {
+    e.preventDefault();
+    const x = read(), msg = check(x);
+    $("err").textContent = msg;
+    if (msg){ $("out").innerHTML = ""; return; }
+    render(x, analyze(x));
+  });
+  $("clearBtn").addEventListener("click", () => { $("f").reset(); $("err").textContent = ""; $("out").innerHTML = ""; });
+}
+if (typeof module !== "undefined") module.exports = {analyze, evaluate, grades};
+</script>
+</body>
+</html>
